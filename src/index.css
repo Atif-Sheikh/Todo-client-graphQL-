@@ -1,14 +1,95 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #eee;
+  font-family: sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App > h1 {
+  color: #444;
+  text-align: center;
+}
+
+.App {
+  padding: 0px;
+  box-sizing: border-box;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+#todo-list {
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 12px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #880E4F;
+  box-shadow: 3px 2px 20px darkred;
+  cursor: pointer;
+  color: #880E4F;
+}
+
+/* li > button {
+  border-radius: 50%;
+  width: 25px;
+  height: 20px;
+  text-align: center;
+  align-items: center;
+  margin-left: 10px;
+  background: #880E4F;
+  border: none;
+  color: #eee;
+  cursor: pointer;
+} */
+
+.mainForm {
+  background: #fff;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+}
+
+form .field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+form label {
+  text-align: center;
+  padding: 6px;
+}
+
+input {
+  margin: 4px;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 18px;
+  box-shadow: 2px 2px 1px palevioletred;
+}
+
+form button {
+  color: #fff;
+  font-size: 2em;
+  background: #AD1457;
+  border: 0;
+  padding: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
 }
